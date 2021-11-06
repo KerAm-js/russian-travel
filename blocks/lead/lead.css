@@ -1,8 +1,53 @@
 .lead {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
+  display: grid;
+  grid-template-columns: 48px 1fr 984px 1fr 48px;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: 
+    ". . title . ."
+    ". . subtitle . ."
+    ". . image . ."
+    ". . caption . .";
+  justify-items: center;
   padding: 48px 0 0;
   margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead {
+    grid-template-columns: 48px 1fr minmax(auto, 984px) 1fr 48px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .lead {
+    grid-template-columns: calc(48 * 100% / 1024) 1fr calc(48 * 100% / 1024);
+    grid-template-areas: 
+    ". title ."
+    ". subtitle ."
+    ". image ."
+    ". caption .";
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead {
+    grid-template-columns: calc(24 * 100% / 1024) 1fr calc(24 * 100% / 1024);
+    grid-template-areas: 
+    ". title ."
+    ". subtitle ."
+    "image image image"
+    ". caption .";
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .lead {
+    grid-template-columns: 16px 1fr 16px;
+    grid-template-areas: 
+    ". title ."
+    ". subtitle ."
+    "image image image"
+    ". caption .";
+  }
 }
