@@ -1,0 +1,19 @@
+.content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 92px;
+}
+
+@media screen and (max-width: 768) {
+  .content {
+    grid-row-gap: 88px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    grid-row-gap: 64px;
+  }
+}
