@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 1024px) {
   .intro {
-    grid-template-columns: calc(48 * 100% / 1024) 1fr calc(48 * 100% / 1024);
+    grid-template-columns: 48px 1fr 48px;
     grid-template-areas: 
     ". title ."
     ". text ."
@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 768px) {
   .intro {
-    grid-template-columns: calc(24 * 100% / 1024) 1fr calc(24 * 100% / 1024);
+    grid-template-columns: 24px 1fr 24px;
   }
 }
 
