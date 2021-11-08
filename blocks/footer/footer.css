@@ -3,6 +3,7 @@
   padding: 0 48px 24px;
   margin: 0;
   width: 100%;
+  max-width: 1280px;
   height: auto;
   display: flex;
   justify-content: space-between;

@@ -1,53 +1,14 @@
 .cover {
-  background-image: url('../../images/cover-trains.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: calc(100vw - 96px);
-  height: calc(calc(100vw - 96px) * .625);
+  max-width: 1280px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
-.cover:before {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  width: calc(100vw - 96px);
-  height: calc(calc(100vw - 96px) * .625);
-  background: #2A2C2F;
-  opacity: 0.3;
-}
-
-.cover:hover:before {
-  content: "";
-  opacity: 0.8;
-  z-index: 1;
-  position: absolute;
-  width: calc(100vw - 96px);
-  height: calc(calc(100vw - 96px) * .625);
-  background: #2A2C2F;
-  transition: opacity .2s linear;
-}
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .cover {
-    width: 100%;
-    height: calc(100vw * .625);
-  }
-  
-  .cover:before {
-    width: 100%;
-    height: calc(100vw * .625);
-  }
-  
-  .cover:hover:before {
-    width: 100%;
-    height: calc(100vw * .625);
+    margin: 2px 0 0 0;
   }
 }

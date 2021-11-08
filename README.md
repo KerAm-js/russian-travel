@@ -22,3 +22,7 @@
 * BEM-methodology
 * Git
 * gh-pages
+
+**Ссылка на веб-сайт**
+
+https://keram-js.github.io/russian-travel/index.html

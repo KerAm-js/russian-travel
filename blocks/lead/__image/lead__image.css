@@ -1,5 +1,17 @@
 .lead__image {
-  grid-area: image;
   width: 100%;
-  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 48px;
+}
+
+@media screen and (min-width: 1080px) {
+  .lead__image {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead__image {
+    padding: 0;
+  }
 }

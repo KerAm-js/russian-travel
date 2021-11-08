@@ -1,11 +1,29 @@
 .lead__caption {
-  grid-area: caption;
   margin: 8px 0 0;
-  padding: 0;
+  padding: 0 0 0 48px;
   justify-self: start;
   font-weight: normal;
   font-size: 10px;
   line-height: 14px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 1080px) {
+  .lead__caption {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead__caption {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .lead__caption {
+    padding-left: 16px;
+  }
 }

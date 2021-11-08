@@ -18,6 +18,7 @@
 
 @media screen and (max-width: 425px) {
   .place__title {
+    box-sizing: border-box;
     font-size: 32px;
     line-height: 35px;
     padding: 0 16px;
